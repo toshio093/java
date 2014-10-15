@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN"
+  "http://ibatis.apache.org/dtd/abator-config_1_0.dtd">
+
+<abatorConfiguration>
+  <abatorContext>    <!-- TODO: Add Database Connection Information -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://localhost:3306/testdb"
+        userId="root"
+        password="password">
+      <classPathEntry location="C:\Program Files (x86)\Java\mysql-connector-java-5.0.8\mysql-connector-java-5.0.8-bin.jar" ></classPathEntry>
+    </jdbcConnection>
+
+    <javaModelGenerator targetPackage="jsptest" targetProject="jsptest" />
+    <sqlMapGenerator targetPackage="jsptest" targetProject="jsptest" />
+    <daoGenerator type="IBATIS" targetPackage="jsptest" targetProject="jsptest" />
+
+    <table schema="testdb" tableName="employee">
+      <!--
+      <columnOverride column="id"        property="id"        javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="name"      property="name"      javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="deptcode"  property="deptCode"  javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="deptname"  property="deptName"  javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="unitcode"  property="unitCode"  javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="unitname"  property="unitName"  javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="pstncode"  property="pstnCode"  javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="pstnname"  property="pstnName"  javaType="String" jdbcType="VARCHAR" />
+      <columnOverride column="layercode" property="layerCode" javaType="int"    jdbcType="INTEGER" />
+      <columnOverride column="trnsflag"  property="trnsFlag"  javaType="int"    jdbcType="INTEGER" />
+      <columnOverride column="msnum"     property="msNum"     javaType="int"    jdbcType="INTEGER" />
+      <columnOverride column="nw_id"     property="nwId"      javaType="String" jdbcType="VARCHAR" />
+       -->
+    </table>
+
+  </abatorContext>
+</abatorConfiguration>
