@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="./jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="./jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="./jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="./setModal.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+  $('#table_id').dataTable();
+  
+  $('input[type=checkbox]').click(function() {
+    var t = $(this).prop;
+    if(t('checked'))
+      t('checked', '');
+    else
+      t('checked', 'checked');
+  });
+
+  $('table tr').click(function() {
+    var c = $(this).children('td').children('input[type=checkbox]');
+    if(c.prop('checked'))
+      c.prop('checked', '');
+    else
+      c.prop('checked', 'checked');
+  });
+
+});
+</script>
+<table id="table_id">
+    <thead>
+        <tr><th> </th><th>氏名</th><th>基本情報ID</th><th>部店名</th><th>課ユニット名</th></tr>
+    </thead>
+    <tbody>
+    	<tr><td><input type="checkbox" /></td><td>社員0</td><td>EMP00001</td><td>部店A</td><td>部店A</td></tr>
+        <tr><td><input type="checkbox" /></td><td>社員1</td><td>EMP00002</td><td>部店A</td><td>部店B</td></tr>
+        <tr><td><input type="checkbox" /></td><td>社員2</td><td>EMP00003</td><td>部店A</td><td>部店C</td></tr>
+        <tr><td><input type="checkbox" /></td><td>社員3</td><td>EMP00001</td><td>部店A</td><td>部店D</td></tr>
+        <tr><td><input type="checkbox" /></td><td>社員4</td><td>EMP00001</td><td>部店A</td><td>部店E</td></tr>
+        <tr><td><input type="checkbox" /></td><td>社員5</td><td>EMP00001</td><td>部店A</td><td>部店F</td></tr>
+    </tbody>
+</table>
+</body>
+</html>

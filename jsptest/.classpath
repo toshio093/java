@@ -4,5 +4,14 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/Java/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/ibatis.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-core-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-el-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-extras-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-faces-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-mailreader-dao-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-scripting-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-taglib-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/struts-tiles-1.3.10.jar"/>
+	<classpathentry kind="lib" path="F:/eclipse/workspace/.metadata/.plugins/javax.servlet-3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
