@@ -36,7 +36,7 @@ public class EmpTag extends BodyTagSupport {
 	 public int doAfterBody() throws JspException{
 		 try{
 			 BodyContent bodycontent = getBodyContent();
-			 String body = bodycontent.getString();
+			 String body = bodycontent.getString().replaceAll("\n", "");
 			 JspWriter out = bodycontent.getEnclosingWriter();
 			 StringBuffer buffer = new StringBuffer();
 
