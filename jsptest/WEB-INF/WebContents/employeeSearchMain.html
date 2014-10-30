@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="./jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="./jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="./jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="./setModal.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+  $('#table_id').dataTable();
+  
+  $('input[type=checkbox]').click(function() {
+    var t = $(this).prop;
+    if(t('checked'))
+      t('checked', '');
+    else
+      t('checked', 'checked');
+  });
+
+  $('table tr').click(function() {
+    var c = $(this).children('td').children('input[type=checkbox]');
+    if(c.prop('checked'))
+      c.prop('checked', '');
+    else
+      c.prop('checked', 'checked');
+  });
+
+});
+</script>
+
+	<h3>JS TEST</h3>
+	<form id="form1" action="">
+		<select id="SbDept">
+			<option value="0">ITP</option>
+			<option value="1">BSD</option>
+			<option value="2">総務部</option>
+			<option value="3">管理部</option>
+		</select>
+		<input type="button" id="submit" value="Ajax Submit"/>
+	</form>
+
+    <br><br>
+    社員Table
+    <table id="emptable" class="emptable">
+    </table>
+		<input type="button" id="add" value="追加"/>
+
+    <br><br>
+    決定Table
+    <table id="resulttable" class="emptable">
+    </table>
+</body>
+</html>
